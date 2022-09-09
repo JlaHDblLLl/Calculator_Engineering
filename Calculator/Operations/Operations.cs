@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Operations
+﻿namespace Operations
 {
     public class Operations
     {
@@ -54,7 +48,7 @@ namespace Operations
         }
         public List<double> Down()
         {
-            
+
             Listik[3] = Listik[2];
             Listik[2] = Listik[1];
             Listik[1] = Listik[0];

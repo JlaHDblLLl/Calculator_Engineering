@@ -32,100 +32,198 @@
             this.Minus = new System.Windows.Forms.Button();
             this.Multiplise = new System.Windows.Forms.Button();
             this.Devise = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.Up = new System.Windows.Forms.Button();
+            this.Switch = new System.Windows.Forms.Button();
+            this.Down = new System.Windows.Forms.Button();
+            this.Rotate = new System.Windows.Forms.Button();
+            this.textBox0 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Plus
             // 
-            this.Plus.Location = new System.Drawing.Point(147, 220);
+            this.Plus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Plus.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Plus.Location = new System.Drawing.Point(11, 100);
+            this.Plus.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Plus.Name = "Plus";
-            this.Plus.Size = new System.Drawing.Size(48, 44);
+            this.Plus.Size = new System.Drawing.Size(64, 59);
             this.Plus.TabIndex = 0;
             this.Plus.Text = "+";
             this.Plus.UseVisualStyleBackColor = true;
+            this.Plus.Click += new System.EventHandler(this.Plus_Click);
             // 
             // Minus
             // 
-            this.Minus.Location = new System.Drawing.Point(93, 220);
+            this.Minus.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Minus.Location = new System.Drawing.Point(11, 39);
+            this.Minus.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Minus.Name = "Minus";
-            this.Minus.Size = new System.Drawing.Size(48, 44);
+            this.Minus.Size = new System.Drawing.Size(64, 59);
             this.Minus.TabIndex = 1;
             this.Minus.Text = "-";
             this.Minus.UseVisualStyleBackColor = true;
+            this.Minus.Click += new System.EventHandler(this.Minus_Click);
             // 
             // Multiplise
             // 
-            this.Multiplise.Location = new System.Drawing.Point(201, 220);
+            this.Multiplise.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Multiplise.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Multiplise.Location = new System.Drawing.Point(79, 39);
+            this.Multiplise.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Multiplise.Name = "Multiplise";
-            this.Multiplise.Size = new System.Drawing.Size(48, 44);
+            this.Multiplise.Size = new System.Drawing.Size(64, 59);
             this.Multiplise.TabIndex = 2;
             this.Multiplise.Text = "*";
             this.Multiplise.UseVisualStyleBackColor = true;
+            this.Multiplise.Click += new System.EventHandler(this.Multiplise_Click);
             // 
             // Devise
             // 
-            this.Devise.Location = new System.Drawing.Point(255, 220);
+            this.Devise.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Devise.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Devise.Location = new System.Drawing.Point(79, 100);
+            this.Devise.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Devise.Name = "Devise";
-            this.Devise.Size = new System.Drawing.Size(48, 44);
+            this.Devise.Size = new System.Drawing.Size(64, 59);
             this.Devise.TabIndex = 3;
             this.Devise.Text = "/";
             this.Devise.UseVisualStyleBackColor = true;
+            this.Devise.Click += new System.EventHandler(this.Devise_Click);
             // 
-            // button1
+            // Up
             // 
-            this.button1.Location = new System.Drawing.Point(688, 220);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(48, 44);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "/";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Up.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Up.Location = new System.Drawing.Point(332, 39);
+            this.Up.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.Up.Name = "Up";
+            this.Up.Size = new System.Drawing.Size(64, 59);
+            this.Up.TabIndex = 7;
+            this.Up.Text = "↑";
+            this.Up.UseVisualStyleBackColor = true;
+            this.Up.Click += new System.EventHandler(this.Up_Click);
             // 
-            // button2
+            // Switch
             // 
-            this.button2.Location = new System.Drawing.Point(634, 220);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(48, 44);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "*";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Switch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Switch.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Switch.Location = new System.Drawing.Point(332, 100);
+            this.Switch.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.Switch.Name = "Switch";
+            this.Switch.Size = new System.Drawing.Size(64, 59);
+            this.Switch.TabIndex = 6;
+            this.Switch.Text = "⤥⤣";
+            this.Switch.UseVisualStyleBackColor = true;
+            this.Switch.Click += new System.EventHandler(this.Switch_Click);
             // 
-            // button3
+            // Down
             // 
-            this.button3.Location = new System.Drawing.Point(526, 220);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(48, 44);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "-";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Down.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Down.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Down.Location = new System.Drawing.Point(400, 39);
+            this.Down.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.Down.Name = "Down";
+            this.Down.Size = new System.Drawing.Size(64, 59);
+            this.Down.TabIndex = 5;
+            this.Down.Text = "↓";
+            this.Down.UseVisualStyleBackColor = true;
+            this.Down.Click += new System.EventHandler(this.Down_Click);
             // 
-            // button4
+            // Rotate
             // 
-            this.button4.Location = new System.Drawing.Point(580, 220);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(48, 44);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "+";
-            this.button4.UseVisualStyleBackColor = true;
+            this.Rotate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Rotate.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Rotate.Location = new System.Drawing.Point(400, 100);
+            this.Rotate.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.Rotate.Name = "Rotate";
+            this.Rotate.Size = new System.Drawing.Size(64, 59);
+            this.Rotate.TabIndex = 4;
+            this.Rotate.Text = "↻";
+            this.Rotate.UseVisualStyleBackColor = true;
+            this.Rotate.Click += new System.EventHandler(this.Rotate_Click);
+            // 
+            // textBox0
+            // 
+            this.textBox0.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.textBox0.Location = new System.Drawing.Point(148, 39);
+            this.textBox0.Name = "textBox0";
+            this.textBox0.Size = new System.Drawing.Size(179, 23);
+            this.textBox0.TabIndex = 8;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.textBox1.Location = new System.Drawing.Point(148, 68);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(179, 23);
+            this.textBox1.TabIndex = 9;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.textBox2.Location = new System.Drawing.Point(148, 107);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(179, 23);
+            this.textBox2.TabIndex = 10;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.textBox3.Location = new System.Drawing.Point(148, 136);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(179, 23);
+            this.textBox3.TabIndex = 11;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(475, 24);
+            this.menuStrip1.TabIndex = 12;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // menuToolStripMenuItem
+            // 
+            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.menuToolStripMenuItem.Text = "Menu";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(883, 742);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.ClientSize = new System.Drawing.Size(475, 181);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox0);
+            this.Controls.Add(this.Up);
+            this.Controls.Add(this.Switch);
+            this.Controls.Add(this.Down);
+            this.Controls.Add(this.Rotate);
             this.Controls.Add(this.Devise);
             this.Controls.Add(this.Multiplise);
             this.Controls.Add(this.Minus);
             this.Controls.Add(this.Plus);
+            this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.MinimumSize = new System.Drawing.Size(491, 181);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Calculator";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -135,9 +233,15 @@
         private Button Minus;
         private Button Multiplise;
         private Button Devise;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
+        private Button Up;
+        private Button Switch;
+        private Button Down;
+        private Button Rotate;
+        private TextBox textBox0;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private TextBox textBox3;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem menuToolStripMenuItem;
     }
 }
