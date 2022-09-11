@@ -1,6 +1,6 @@
 ﻿namespace Calculator
 {
-    partial class Form1
+    partial class Form_Calculator
     {
         /// <summary>
         ///  Required designer variable.
@@ -42,6 +42,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.resetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             // 
             this.Plus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Plus.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Plus.Location = new System.Drawing.Point(11, 100);
+            this.Plus.Location = new System.Drawing.Point(11, 102);
             this.Plus.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Plus.Name = "Plus";
             this.Plus.Size = new System.Drawing.Size(64, 59);
@@ -87,7 +88,7 @@
             // 
             this.Devise.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Devise.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Devise.Location = new System.Drawing.Point(79, 100);
+            this.Devise.Location = new System.Drawing.Point(79, 102);
             this.Devise.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Devise.Name = "Devise";
             this.Devise.Size = new System.Drawing.Size(64, 59);
@@ -112,7 +113,7 @@
             // 
             this.Switch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.Switch.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Switch.Location = new System.Drawing.Point(332, 100);
+            this.Switch.Location = new System.Drawing.Point(332, 102);
             this.Switch.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Switch.Name = "Switch";
             this.Switch.Size = new System.Drawing.Size(64, 59);
@@ -138,7 +139,7 @@
             // 
             this.Rotate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Rotate.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Rotate.Location = new System.Drawing.Point(400, 100);
+            this.Rotate.Location = new System.Drawing.Point(400, 102);
             this.Rotate.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Rotate.Name = "Rotate";
             this.Rotate.Size = new System.Drawing.Size(64, 59);
@@ -152,32 +153,40 @@
             this.textBox0.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.textBox0.Location = new System.Drawing.Point(148, 39);
             this.textBox0.Name = "textBox0";
+            this.textBox0.ReadOnly = true;
             this.textBox0.Size = new System.Drawing.Size(179, 23);
             this.textBox0.TabIndex = 8;
+            this.textBox0.Text = "0";
             // 
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.textBox1.Location = new System.Drawing.Point(148, 68);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(179, 23);
             this.textBox1.TabIndex = 9;
+            this.textBox1.Text = "0";
             // 
             // textBox2
             // 
             this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.textBox2.Location = new System.Drawing.Point(148, 107);
+            this.textBox2.Location = new System.Drawing.Point(148, 109);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(179, 23);
             this.textBox2.TabIndex = 10;
+            this.textBox2.Text = "0";
             // 
             // textBox3
             // 
             this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.textBox3.Location = new System.Drawing.Point(148, 136);
+            this.textBox3.Location = new System.Drawing.Point(148, 138);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(179, 23);
             this.textBox3.TabIndex = 11;
+            this.textBox3.Text = "0";
+            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
             // menuStrip1
             // 
@@ -191,16 +200,26 @@
             // 
             // menuToolStripMenuItem
             // 
+            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.resetToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.menuToolStripMenuItem.Text = "Menu";
             // 
-            // Form1
+            // resetToolStripMenuItem
+            // 
+            this.resetToolStripMenuItem.Name = "resetToolStripMenuItem";
+            this.resetToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
+            this.resetToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.resetToolStripMenuItem.Text = "Reset";
+            this.resetToolStripMenuItem.Click += new System.EventHandler(this.resetToolStripMenuItem_Click);
+            // 
+            // Form_Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(475, 181);
+            this.ClientSize = new System.Drawing.Size(475, 183);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -217,8 +236,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.MinimumSize = new System.Drawing.Size(491, 181);
-            this.Name = "Form1";
+            this.MinimumSize = new System.Drawing.Size(491, 222);
+            this.Name = "Form_Calculator";
             this.Text = "Calculator";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -243,5 +262,6 @@
         private TextBox textBox3;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem menuToolStripMenuItem;
+        private ToolStripMenuItem resetToolStripMenuItem;
     }
 }

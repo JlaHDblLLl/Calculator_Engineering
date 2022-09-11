@@ -2,14 +2,7 @@
 {
     public class Operations
     {
-        public Operations(List<double> listik)
-        {
-            Listik = listik;
-        }
-
-        List<double> Listik { get; set; }
-
-        public List<double> Up(string operation)
+        public List<double> Up(string operation, List<double> Listik)
         {
             switch (operation)
             {
@@ -17,25 +10,25 @@
                     Listik[0] = Listik[1];
                     Listik[1] = Listik[2];
                     Listik[2] = Listik[3];
-                    Listik[3] += Listik[1];
+                    Listik[3] = Listik[1] + Listik[3];
                     break;
                 case "-":
                     Listik[0] = Listik[1];
                     Listik[1] = Listik[2];
                     Listik[2] = Listik[3];
-                    Listik[3] -= Listik[1];
+                    Listik[3] = Listik[1] - Listik[3];
                     break;
                 case "/":
                     Listik[0] = Listik[1];
                     Listik[1] = Listik[2];
                     Listik[2] = Listik[3];
-                    Listik[3] /= Listik[1];
+                    Listik[3] = Listik[1] / Listik[3];
                     break;
                 case "*":
                     Listik[0] = Listik[1];
                     Listik[1] = Listik[2];
                     Listik[2] = Listik[3];
-                    Listik[3] *= Listik[1];
+                    Listik[3] = Listik[1] * Listik[3];
                     break;
                 default:
                     Listik[0] = Listik[1];
@@ -46,29 +39,26 @@
             }
             return Listik;
         }
-        public List<double> Down()
+        public void Down(List<double> Listik)
         {
 
             Listik[3] = Listik[2];
             Listik[2] = Listik[1];
             Listik[1] = Listik[0];
-            return Listik;
         }
-        public List<double> Switch()
+        public void Switch(List<double> Listik)
         {
             double buff = Listik[3];
             Listik[3] = Listik[2];
             Listik[2] = buff;
-            return Listik;
         }
-        public List<double> Turn()
+        public void Turn(List<double> Listik)
         {
-            double buff = Listik[0];
-            Listik[0] = Listik[1];
-            Listik[1] = Listik[2];
-            Listik[2] = Listik[3];
-            Listik[3] = buff;
-            return Listik;
+            double buff = Listik[3];
+            Listik[3] = Listik[2];
+            Listik[2] = Listik[1];
+            Listik[1] = Listik[0];
+            Listik[0] = buff;
         }
     }
 }
