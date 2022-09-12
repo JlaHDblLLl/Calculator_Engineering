@@ -45,6 +45,7 @@
             Listik[3] = Listik[2];
             Listik[2] = Listik[1];
             Listik[1] = Listik[0];
+            Listik[0] = 0;
         }
         public void Switch(List<double> Listik)
         {

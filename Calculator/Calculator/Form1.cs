@@ -113,6 +113,7 @@ namespace Calculator
             this.Multiplise.BackColor = DefaultBackColor;
             this.Minus.BackColor = DefaultBackColor;
             Listik = new List<double>(4) { 0, 0, 0, 0 };
+            State = "";
             ReCheck();
         }
     }
